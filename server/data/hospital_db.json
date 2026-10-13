@@ -1,0 +1,524 @@
+{
+  "patients": [
+    {
+      "id": "PAT-1001",
+      "name": "Rajesh Sharma",
+      "age": 48,
+      "gender": "Male",
+      "bloodGroup": "B+",
+      "contact": "+91 98201 23456",
+      "email": "rajesh.sharma@example.com",
+      "address": "B-402 Shanti Vihar, Andheri West, Mumbai",
+      "admissionStatus": "Admitted",
+      "assignedDoctor": "Dr. Vikram Malhotra",
+      "department": "Cardiology",
+      "roomBed": "ICU - Bed 02",
+      "admissionDate": "2026-10-10",
+      "diagnosis": "Acute Coronary Syndrome",
+      "allergies": "Penicillin",
+      "vitals": {
+        "bp": "128/82 mmHg",
+        "heartRate": "74 bpm",
+        "temp": "98.6 °F",
+        "spO2": "98%"
+      }
+    },
+    {
+      "id": "PAT-1002",
+      "name": "Sunita Deshmukh",
+      "age": 62,
+      "gender": "Female",
+      "bloodGroup": "O+",
+      "contact": "+91 98112 34567",
+      "email": "sunita.deshmukh@example.com",
+      "address": "12 Civil Lines, Nagpur",
+      "admissionStatus": "Admitted",
+      "assignedDoctor": "Dr. Arvind Joshi",
+      "department": "Neurology",
+      "roomBed": "Ward A - Bed 04",
+      "admissionDate": "2026-10-11",
+      "diagnosis": "Ischemic Stroke (Stable)",
+      "allergies": "Sulfa drugs",
+      "vitals": {
+        "bp": "135/88 mmHg",
+        "heartRate": "68 bpm",
+        "temp": "98.4 °F",
+        "spO2": "97%"
+      }
+    },
+    {
+      "id": "PAT-1003",
+      "name": "Aarav Verma",
+      "age": 29,
+      "gender": "Male",
+      "bloodGroup": "A+",
+      "contact": "+91 98450 45678",
+      "email": "aarav.verma@example.com",
+      "address": "78 Indiranagar 100ft Rd, Bengaluru",
+      "admissionStatus": "Outpatient",
+      "assignedDoctor": "Dr. Meera Nambiar",
+      "department": "Orthopedics",
+      "roomBed": null,
+      "admissionDate": "2026-10-13",
+      "diagnosis": "Left Ankle Sprain (Grade 2)",
+      "allergies": "None",
+      "vitals": {
+        "bp": "116/74 mmHg",
+        "heartRate": "70 bpm",
+        "temp": "98.6 °F",
+        "spO2": "99%"
+      }
+    },
+    {
+      "id": "PAT-1004",
+      "name": "Kavita Krishnan",
+      "age": 35,
+      "gender": "Female",
+      "bloodGroup": "AB+",
+      "contact": "+91 98765 56789",
+      "email": "kavita.k@example.com",
+      "address": "Plot 45, Anna Nagar, Chennai",
+      "admissionStatus": "Admitted",
+      "assignedDoctor": "Dr. Ananya Sen",
+      "department": "Pulmonology",
+      "roomBed": "Ward B - Bed 01",
+      "admissionDate": "2026-10-09",
+      "diagnosis": "Bacterial Pneumonia",
+      "allergies": "Aspirin",
+      "vitals": {
+        "bp": "122/80 mmHg",
+        "heartRate": "82 bpm",
+        "temp": "100.2 °F",
+        "spO2": "94%"
+      }
+    },
+    {
+      "id": "PAT-1005",
+      "name": "Amit Banerjee",
+      "age": 54,
+      "gender": "Male",
+      "bloodGroup": "O-",
+      "contact": "+91 98300 67890",
+      "email": "amit.banerjee@example.com",
+      "address": "15 Salt Lake Sector 1, Kolkata",
+      "admissionStatus": "Discharged",
+      "assignedDoctor": "Dr. Vikram Malhotra",
+      "department": "Cardiology",
+      "roomBed": null,
+      "admissionDate": "2026-10-02",
+      "diagnosis": "Hypertensive Crisis (Stabilized)",
+      "allergies": "Ibuprofen",
+      "vitals": {
+        "bp": "120/78 mmHg",
+        "heartRate": "72 bpm",
+        "temp": "98.5 °F",
+        "spO2": "99%"
+      }
+    }
+  ],
+  "doctors": [
+    {
+      "id": "DOC-201",
+      "name": "Dr. Vikram Malhotra",
+      "specialty": "Interventional Cardiology",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, DM Cardiology (AIIMS New Delhi)",
+      "contact": "+91 98100 11223",
+      "email": "dr.malhotra@medicare.in",
+      "schedule": "Mon - Thu: 08:30 - 16:30",
+      "isAvailable": true,
+      "consultationFee": 1500,
+      "experienceYears": 16,
+      "rating": 4.9,
+      "activePatientsCount": 8
+    },
+    {
+      "id": "DOC-202",
+      "name": "Dr. Arvind Joshi",
+      "specialty": "Chief Neurologist",
+      "department": "Neurology",
+      "qualification": "MBBS, MD, DNB Neurology (NIMHANS Bengaluru)",
+      "contact": "+91 98200 22334",
+      "email": "dr.joshi@medicare.in",
+      "schedule": "Tue - Sat: 09:00 - 17:00",
+      "isAvailable": true,
+      "consultationFee": 1800,
+      "experienceYears": 19,
+      "rating": 4.95,
+      "activePatientsCount": 6
+    },
+    {
+      "id": "DOC-203",
+      "name": "Dr. Meera Nambiar",
+      "specialty": "Orthopedic & Trauma Surgeon",
+      "department": "Orthopedics",
+      "qualification": "MBBS, MS Orthopedics (CMC Vellore), MCh",
+      "contact": "+91 98300 33445",
+      "email": "dr.nambiar@medicare.in",
+      "schedule": "Mon, Wed, Fri: 08:00 - 15:00",
+      "isAvailable": false,
+      "consultationFee": 1200,
+      "experienceYears": 12,
+      "rating": 4.85,
+      "activePatientsCount": 5
+    },
+    {
+      "id": "DOC-204",
+      "name": "Dr. Ananya Sen",
+      "specialty": "Pulmonology & Critical Care",
+      "department": "Pulmonology",
+      "qualification": "MBBS, MD Chest Medicine (PGI Chandigarh)",
+      "contact": "+91 98400 44556",
+      "email": "dr.sen@medicare.in",
+      "schedule": "Mon - Fri: 10:00 - 18:00",
+      "isAvailable": true,
+      "consultationFee": 1400,
+      "experienceYears": 14,
+      "rating": 4.9,
+      "activePatientsCount": 7
+    },
+    {
+      "id": "DOC-205",
+      "name": "Dr. Rakesh Kulkarni",
+      "specialty": "Pediatric Medicine & Neonatology",
+      "department": "Pediatrics",
+      "qualification": "MBBS, MD Pediatrics, FIAP (KEM Mumbai)",
+      "contact": "+91 98500 55667",
+      "email": "dr.kulkarni@medicare.in",
+      "schedule": "Mon - Sat: 09:00 - 14:00",
+      "isAvailable": true,
+      "consultationFee": 1100,
+      "experienceYears": 10,
+      "rating": 4.92,
+      "activePatientsCount": 11
+    }
+  ],
+  "appointments": [
+    {
+      "id": "APT-501",
+      "patientId": "PAT-1001",
+      "patientName": "Rajesh Sharma",
+      "doctorId": "DOC-201",
+      "doctorName": "Dr. Vikram Malhotra",
+      "department": "Cardiology",
+      "date": "2026-10-14",
+      "time": "09:30 AM",
+      "type": "Follow-up",
+      "status": "Scheduled",
+      "notes": "Post-stent cardiac evaluation and ECG review"
+    },
+    {
+      "id": "APT-502",
+      "patientId": "PAT-1003",
+      "patientName": "Aarav Verma",
+      "doctorId": "DOC-203",
+      "doctorName": "Dr. Meera Nambiar",
+      "department": "Orthopedics",
+      "date": "2026-10-14",
+      "time": "11:00 AM",
+      "type": "Consultation",
+      "status": "Scheduled",
+      "notes": "Ankle ultrasound check and brace fitting"
+    },
+    {
+      "id": "APT-503",
+      "patientId": "PAT-1004",
+      "patientName": "Kavita Krishnan",
+      "doctorId": "DOC-204",
+      "doctorName": "Dr. Ananya Sen",
+      "department": "Pulmonology",
+      "date": "2026-10-13",
+      "time": "02:00 PM",
+      "type": "Checkup",
+      "status": "Completed",
+      "notes": "Chest X-ray review showing significant clearing"
+    },
+    {
+      "id": "APT-504",
+      "patientId": "PAT-1002",
+      "patientName": "Sunita Deshmukh",
+      "doctorId": "DOC-202",
+      "doctorName": "Dr. Arvind Joshi",
+      "department": "Neurology",
+      "date": "2026-10-15",
+      "time": "10:15 AM",
+      "type": "Consultation",
+      "status": "Scheduled",
+      "notes": "MRI Brain follow-up scan consultation"
+    },
+    {
+      "id": "APT-505",
+      "patientId": "PAT-1005",
+      "patientName": "Amit Banerjee",
+      "doctorId": "DOC-201",
+      "doctorName": "Dr. Vikram Malhotra",
+      "department": "Cardiology",
+      "date": "2026-10-11",
+      "time": "03:30 PM",
+      "type": "Follow-up",
+      "status": "Completed",
+      "notes": "Blood pressure stabilization verified, approved discharge"
+    }
+  ],
+  "beds": [
+    {
+      "id": "BED-101",
+      "ward": "ICU",
+      "room": "Room 101",
+      "bedNumber": "Bed 01",
+      "status": "Available",
+      "dailyRate": 6500,
+      "patientId": null,
+      "patientName": null,
+      "admittedSince": null
+    },
+    {
+      "id": "BED-102",
+      "ward": "ICU",
+      "room": "Room 101",
+      "bedNumber": "Bed 02",
+      "status": "Occupied",
+      "dailyRate": 6500,
+      "patientId": "PAT-1001",
+      "patientName": "Rajesh Sharma",
+      "admittedSince": "2026-10-10"
+    },
+    {
+      "id": "BED-201",
+      "ward": "General Ward A",
+      "room": "Ward 2A",
+      "bedNumber": "Bed 01",
+      "status": "Available",
+      "dailyRate": 1800,
+      "patientId": null,
+      "patientName": null,
+      "admittedSince": null
+    },
+    {
+      "id": "BED-202",
+      "ward": "General Ward A",
+      "room": "Ward 2A",
+      "bedNumber": "Bed 04",
+      "status": "Occupied",
+      "dailyRate": 1800,
+      "patientId": "PAT-1002",
+      "patientName": "Sunita Deshmukh",
+      "admittedSince": "2026-10-11"
+    },
+    {
+      "id": "BED-301",
+      "ward": "General Ward B",
+      "room": "Ward 3B",
+      "bedNumber": "Bed 01",
+      "status": "Occupied",
+      "dailyRate": 1800,
+      "patientId": "PAT-1004",
+      "patientName": "Kavita Krishnan",
+      "admittedSince": "2026-10-09"
+    },
+    {
+      "id": "BED-302",
+      "ward": "General Ward B",
+      "room": "Ward 3B",
+      "bedNumber": "Bed 02",
+      "status": "Available",
+      "dailyRate": 1800,
+      "patientId": null,
+      "patientName": null,
+      "admittedSince": null
+    },
+    {
+      "id": "BED-401",
+      "ward": "Emergency",
+      "room": "ER Bay 1",
+      "bedNumber": "ER Bed 01",
+      "status": "Available",
+      "dailyRate": 3000,
+      "patientId": null,
+      "patientName": null,
+      "admittedSince": null
+    },
+    {
+      "id": "BED-402",
+      "ward": "Emergency",
+      "room": "ER Bay 2",
+      "bedNumber": "ER Bed 02",
+      "status": "Maintenance",
+      "dailyRate": 3000,
+      "patientId": null,
+      "patientName": null,
+      "admittedSince": null
+    }
+  ],
+  "medicines": [
+    {
+      "id": "MED-301",
+      "name": "Amoxicillin 500mg",
+      "genericName": "Amoxicillin Trihydrate",
+      "category": "Antibiotics",
+      "dosage": "500mg Capsule",
+      "stock": 280,
+      "minThreshold": 60,
+      "unitPrice": 125.00,
+      "manufacturer": "Cipla Pharmaceuticals",
+      "expiryDate": "2027-08-31",
+      "status": "In Stock"
+    },
+    {
+      "id": "MED-302",
+      "name": "Atorvastatin 20mg",
+      "genericName": "Atorvastatin Calcium",
+      "category": "Cardiovascular",
+      "dosage": "20mg Tablet",
+      "stock": 190,
+      "minThreshold": 50,
+      "unitPrice": 185.00,
+      "manufacturer": "Sun Pharma Ltd",
+      "expiryDate": "2027-04-15",
+      "status": "In Stock"
+    },
+    {
+      "id": "MED-303",
+      "name": "Azithromycin 500mg",
+      "genericName": "Azithromycin",
+      "category": "Antibiotics",
+      "dosage": "500mg Tablet",
+      "stock": 18,
+      "minThreshold": 40,
+      "unitPrice": 145.00,
+      "manufacturer": "Dr. Reddy's Laboratories",
+      "expiryDate": "2026-12-30",
+      "status": "Low Stock"
+    },
+    {
+      "id": "MED-304",
+      "name": "Metformin 500mg",
+      "genericName": "Metformin HCl",
+      "category": "Endocrinology",
+      "dosage": "500mg ER Tablet",
+      "stock": 350,
+      "minThreshold": 80,
+      "unitPrice": 65.00,
+      "manufacturer": "Lupin Healthcare",
+      "expiryDate": "2027-11-20",
+      "status": "In Stock"
+    },
+    {
+      "id": "MED-305",
+      "name": "Salbutamol Inhaler 100mcg",
+      "genericName": "Levosalbutamol",
+      "category": "Respiratory",
+      "dosage": "200 Metered Doses",
+      "stock": 12,
+      "minThreshold": 25,
+      "unitPrice": 240.00,
+      "manufacturer": "Cipla Respiratory",
+      "expiryDate": "2027-03-10",
+      "status": "Low Stock"
+    },
+    {
+      "id": "MED-306",
+      "name": "Paracetamol 650mg (Dolo)",
+      "genericName": "Paracetamol IP",
+      "category": "Analgesic / Anti-inflammatory",
+      "dosage": "650mg Tablet",
+      "stock": 420,
+      "minThreshold": 100,
+      "unitPrice": 35.00,
+      "manufacturer": "Micro Labs Ltd",
+      "expiryDate": "2028-01-15",
+      "status": "In Stock"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-9001",
+      "patientId": "PAT-1001",
+      "patientName": "Rajesh Sharma",
+      "invoiceDate": "2026-10-12",
+      "dueDate": "2026-10-26",
+      "status": "Pending",
+      "paymentMethod": "TPA / Health Insurance",
+      "items": [
+        { "description": "Cardiology Specialist Consultation - Dr. Vikram Malhotra", "category": "Consultation", "amount": 1500.00 },
+        { "description": "12-Lead Electrocardiogram (ECG)", "category": "Diagnostics", "amount": 850.00 },
+        { "description": "ICU Bed Stay (2 Days)", "category": "Room Charges", "amount": 13000.00 },
+        { "description": "Atorvastatin & Cardioprotective Medications", "category": "Pharmacy", "amount": 1420.00 }
+      ],
+      "subtotal": 16770.00,
+      "tax": 838.50,
+      "discount": 500.00,
+      "total": 17108.50
+    },
+    {
+      "id": "INV-9002",
+      "patientId": "PAT-1005",
+      "patientName": "Amit Banerjee",
+      "invoiceDate": "2026-10-03",
+      "dueDate": "2026-10-03",
+      "status": "Paid",
+      "paymentMethod": "UPI / Net Banking",
+      "items": [
+        { "description": "Emergency Room Admission & Triage", "category": "Emergency", "amount": 2500.00 },
+        { "description": "Specialist Consultation - Dr. Vikram Malhotra", "category": "Consultation", "amount": 1500.00 },
+        { "description": "Complete Blood Count & Cardiac Biomarkers", "category": "Diagnostics", "amount": 1800.00 },
+        { "description": "IV Antihypertensive Infusion", "category": "Pharmacy", "amount": 950.00 }
+      ],
+      "subtotal": 6750.00,
+      "tax": 337.50,
+      "discount": 0.00,
+      "total": 7087.50
+    },
+    {
+      "id": "INV-9003",
+      "patientId": "PAT-1003",
+      "patientName": "Aarav Verma",
+      "invoiceDate": "2026-10-13",
+      "dueDate": "2026-10-27",
+      "status": "Paid",
+      "paymentMethod": "UPI / Google Pay",
+      "items": [
+        { "description": "Orthopedic Consultation - Dr. Meera Nambiar", "category": "Consultation", "amount": 1200.00 },
+        { "description": "Digital Ankle X-Ray (2 Views)", "category": "Diagnostics", "amount": 900.00 },
+        { "description": "Orthopedic Ankle Stabilizing Splint", "category": "Supplies", "amount": 850.00 },
+        { "description": "Paracetamol 650mg & Pain Management Pack", "category": "Pharmacy", "amount": 210.00 }
+      ],
+      "subtotal": 3160.00,
+      "tax": 158.00,
+      "discount": 0.00,
+      "total": 3318.00
+    }
+  ],
+  "activities": [
+    {
+      "id": "ACT-1",
+      "type": "admission",
+      "description": "Patient Aarav Verma checked in as outpatient for Orthopedics",
+      "timestamp": "2026-10-13T10:45:00Z"
+    },
+    {
+      "id": "ACT-2",
+      "type": "payment",
+      "description": "Invoice INV-9003 paid (₹3,318.00) via UPI by Aarav Verma",
+      "timestamp": "2026-10-13T11:30:00Z"
+    },
+    {
+      "id": "ACT-3",
+      "type": "bed",
+      "description": "Bed 04 in General Ward A assigned to Sunita Deshmukh",
+      "timestamp": "2026-10-11T14:15:00Z"
+    },
+    {
+      "id": "ACT-4",
+      "type": "appointment",
+      "description": "Dr. Vikram Malhotra scheduled consultation with Rajesh Sharma",
+      "timestamp": "2026-10-10T16:00:00Z"
+    },
+    {
+      "id": "ACT-5",
+      "type": "pharmacy",
+      "description": "Dispensed Atorvastatin 20mg for Patient Rajesh Sharma",
+      "timestamp": "2026-10-10T17:20:00Z"
+    }
+  ]
+}
