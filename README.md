@@ -59,76 +59,42 @@
 
 ```
 MediCareHospital/
-├── client/                     # Frontend React application
+├── client/                  
 │   ├── src/
 │   │   ├── api/
-│   │   │   └── client.js       # Centralized REST API client
+│   │   │   └── client.js       
 │   │   ├── components/
-│   │   │   ├── Navbar.jsx      # Top navigation with live clock & role toggle
-│   │   │   ├── Sidebar.jsx     # Navigation tabs & occupancy progress
-│   │   │   ├── Modal.jsx       # Reusable accessible modal dialog
-│   │   │   └── InvoiceReceiptModal.jsx # Official printable hospital receipt
+│   │   │   ├── Navbar.jsx     
+│   │   │   ├── Sidebar.jsx    
+│   │   │   ├── Modal.jsx      
+│   │   │   └── InvoiceReceiptModal.jsx
 │   │   ├── pages/
-│   │   │   ├── DashboardPage.jsx    # Analytics & KPI overview
-│   │   │   ├── PatientsPage.jsx     # Patient directory & admissions
-│   │   │   ├── DoctorsPage.jsx      # Specialists directory & duty status
-│   │   │   ├── AppointmentsPage.jsx # Scheduling calendar & queues
-│   │   │   ├── BedsPage.jsx         # Ward map & bed allocation
-│   │   │   ├── PharmacyPage.jsx     # Drug inventory & dispensing
-│   │   │   └── BillingPage.jsx      # Invoicing & claims management
-│   │   ├── App.jsx             # Main application orchestrator
-│   │   ├── index.css           # Tailwind CSS imports & print styles
-│   │   └── main.jsx            # React root mount
+│   │   │   ├── DashboardPage.jsx    
+│   │   │   ├── PatientsPage.jsx   
+│   │   │   ├── DoctorsPage.jsx     
+│   │   │   ├── AppointmentsPage.jsx 
+│   │   │   ├── BedsPage.jsx        
+│   │   │   ├── PharmacyPage.jsx     
+│   │   │   └── BillingPage.jsx    
+│   │   ├── App.jsx            
+│   │   ├── index.css           
+│   │   └── main.jsx            
 │   ├── package.json
-│   └── vite.config.js          # Vite config with API proxy
+│   └── vite.config.js         
 │
-├── server/                     # Backend Express REST API
+├── server/                     
 │   ├── data/
-│   │   └── hospital_db.json    # File-backed database with initial sample data
-│   ├── db.js                   # Database controller & activity logger
-│   ├── server.js               # Express API endpoints & routes
+│   │   └── hospital_db.json    
+│   ├── db.js                  
+│   ├── server.js              
 │   └── package.json
 │
-├── .gitignore                  # Git ignore rules for node_modules & builds
-├── package.json                # Root package for running client & server concurrently
-└── README.md                   # Project documentation
+├── .gitignore                 
+├── package.json                
+└── README.md                   
 ```
 
 ---
-
-## 🚀 Quick Start Guide
-
-### Prerequisites
-- **Node.js** (v18 or higher)
-- **npm** (v9 or higher)
-- **Git**
-
-### 1. Installation
-Install all dependencies for root, server, and client:
-
-```bash
-# Install root dependencies
-npm install
-
-# Install server dependencies
-cd server
-npm install
-
-# Install client dependencies
-cd ../client
-npm install
-```
-
-### 2. Run in Development Mode
-From the root directory, start both the backend server and frontend client simultaneously:
-
-```bash
-npm run dev
-```
-
-- **Frontend Client**: [http://localhost:5173](http://localhost:5173)
-- **Backend API Server**: [http://localhost:5000](http://localhost:5000)
-
 ---
 
 ## 🌐 API Endpoints Reference
@@ -159,41 +125,6 @@ npm run dev
 
 ---
 
-## 📤 Publishing to GitHub
-
-Follow these steps to publish this repository to your GitHub account:
-
-### Step 1: Create a Repository on GitHub
-1. Go to [github.com/new](https://github.com/new).
-2. Name your repository (e.g., `medicare-hospital-management-system`).
-3. Set visibility to **Public** or **Private**.
-4. **Do NOT** initialize with a README, .gitignore, or license (we already created them).
-5. Click **Create repository**.
-
-### Step 2: Push your Local Code to GitHub
-Open your terminal in the `MediCareHospital` directory and run:
-
-```bash
-# Initialize git (if not already done)
-git init
-
-# Stage all files
-git add .
-
-# Commit your initial code
-git commit -m "feat: Initial commit of MediCare Hospital Management System"
-
-# Rename current branch to main
-git branch -M main
-
-# Add your GitHub repository as remote origin (replace with your repo URL)
-git remote add origin https://github.com/YOUR_USERNAME/medicare-hospital-management-system.git
-
-# Push code to GitHub
-git push -u origin main
-```
-
----
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
